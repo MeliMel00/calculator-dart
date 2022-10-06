@@ -1,20 +1,34 @@
-// Stateless Widget:
-// Stateless Widgets are static widgets.
-// They do not depend on any data change or any behavior change.
-// Stateless Widgets do not have a state, they will be rendered once and will not update themselves, but will only be updated when external data changes.
-// For Example: Text, Icon, RaisedButton are Stateless Widgets.
 
-// Stateful Widget:
-// Stateful Widgets are dynamic widgets.
-// They can be updated during runtime based on user action or data change.
-// Stateful Widgets have an internal state and can re-render if the input data changes or if Widget’s state changes.
-// For Example: Checkbox, Radio Button, Slider are Stateful Widgets
 
-//What are the common widgets in Flutter and how to customize them?
-// There are different types of widget common in flutter.
-// First of all there is the Scaffold class which provides many widgets. Then there are the widgets that contain and place information such as Container, Padding, Sizedbox...
-// Finally, there are widgets that will create/display information such as AssetImage, Text...
-// We can create the custom widget in a new Dart file with all the code and set the parameters we need in the constructor.
+
+
+// GO TO test.dart
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 import 'package:flutter/material.dart';
 
@@ -125,53 +139,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-// class MyApp extends StatelessWidget {
-//   const MyApp({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       title: 'Welcome to Flutter',
-//       home: Scaffold(
-//           body: Center(
-//         child: new ListView(
-//           children: <Widget>[
-//             new Container(
-//               height: 80.0,
-//               child: new ListView(
-//                 scrollDirection: Axis.horizontal,
-//                 children: new List.generate(20, (int index) {
-//                   return new Card(
-//                     color: Colors.blue[index * 100],
-//                     child: new Container(
-//                       width: 50.0,
-//                       height: 50.0,
-//                       child: new Text("$index"),
-//                     ),
-//                   );
-//                 }),
-//               ),
-//             ),
-//             new Container(
-//               height: 200.0,
-//               child: new ListView(
-//                 scrollDirection: Axis.vertical,
-//                 children: new List.generate(20, (int index) {
-//                   return new Card(
-//                     color: Colors.green[index * 100],
-//                     child: new Container(
-//                       width: 50.0,
-//                       height: 50.0,
-//                       child: new Text("$index"),
-//                     ),
-//                   );
-//                 }),
-//               ),
-//             ),
-//           ],
-//         ),
-//       )),
-//     );
-//   }
-// }

@@ -144,6 +144,7 @@ class _HomePageState extends State<HomePage> {
                     return MyButton(
                       buttontapped: () {
                         setState(() {
+                          // Button equal
                           equalPressed();
                         });
                       },
@@ -152,6 +153,7 @@ class _HomePageState extends State<HomePage> {
                   } else {
                     return MyButton(
                       buttontapped: () {
+                        //other button
                         setState(() {
                           userInput += listnumbers[index];
                         });
